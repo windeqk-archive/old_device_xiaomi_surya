@@ -12,6 +12,15 @@ on init
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/dsi_display_cabc_movie
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/dsi_display_cabc_still  
 
+on fs
+    # debug boot process
+    rm /cache/boot_lc_full.txt
+    rm /cache/boot_lc_crash.txt
+    rm /cache/boot_lc_kernel.txt
+    start boot_lc
+    start boot_lc_kernel
+    start boot_lc_crash
+
 on property:ro.boot.hwc=*
     setprop vendor.boot.hwc ${ro.boot.hwc}   
 
@@ -59,10 +68,35 @@ on late-init
     start vendor.hwcomposer-2-3
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
+    
+service boot_lc /system/bin/logcat -b all -D -f /cache/boot_lc_full.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_lc_crash /system/bin/logcat -b crash -D -f /cache/boot_lc_crash.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_lc_kernel /system/bin/logcat -b kernel -D -f /cache/boot_lc_kernel.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
 
 on property:sys.boot_completed=1
     # Enable UFS clock scaling back
     write /sys/bus/platform/devices/1d84000.ufshc/clkscale_enable 1
+    
+    stop boot_lc
+    stop boot_lc_crash
+    stop boot_lc_kernel
 
     # Runtime fs tuning
     write /sys/block/sda/queue/nr_requests 128
