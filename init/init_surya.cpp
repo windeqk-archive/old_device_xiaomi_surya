@@ -139,6 +139,7 @@ void vendor_load_properties() {
     char nfc_prop[] = "ro.hw.nfc";
 
     if (hwname == "surya") {
+<<<<<<< HEAD
         set_device_props(
                 fp,
                 fp_desc,
@@ -146,12 +147,9 @@ void vendor_load_properties() {
         property_override(nfc_prop, "1");
         property_override("ro.product.mod_device", "surya_global");
     } else if (hwname == "karna") {
-        set_device_props(
-                fp,
-                fp_desc,
-                "POCO", "karna", "M2007J20CI");
-        property_override(nfc_prop, "0");
-        property_override("ro.product.mod_device", "surya_in_global");
+        set_device_props("Poco", "surya", "POCO X3 NFC");
+    } else if (hwname == "karna") {
+        set_device_props("Poco", "karna", "POCO X3");
     }
 
     check_device();
