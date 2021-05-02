@@ -139,7 +139,6 @@ void vendor_load_properties() {
     char nfc_prop[] = "ro.hw.nfc";
 
     if (hwname == "surya") {
-<<<<<<< HEAD
         set_device_props(
                 fp,
                 fp_desc,
