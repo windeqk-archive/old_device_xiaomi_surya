@@ -16,11 +16,23 @@
      limitations under the License.
 -->
 <resources>
+    <!-- POCO X3 specific settings -->
+    <string name="device_specific_settings_title">Dodatkowe ustawienia urządzenia</string>
+    <string name="device_specific_settings_summary">Konfiguracja częstotliwości odświeżania</string>
+    <string name="device_refresh_rate">CZĘSTOTLIWOŚĆ ODŚWIEŻANIA EKRANU</string>
+    <string name="device_min_refresh_rate">Minimalna częstotliwość odświeżania</string>
+    <string name="device_power_save_refresh_rate">Częstotliwość odświeżania podczas oszczędzania baterii</string>
+    <string name="device_power_save_refresh_rate_switch">Automatycznie obniżaj częstotliwość odświeżania, gdy aktywna jest funkcja oszczędzania baterii</string>
+    <string name="msg_device_need_restart">Aby to zadziałało, należy ponownie uruchomić urządzenie.</string>
+    <string name="refresh_rate_tile_title">Refresh Rate</string>
+    <string name="refresh_rate_tile_disabled">Battery saver enabled</string>
+
     <!-- Dirac settings -->
     <string name="dirac_title">Ulepszanie dźwięku Mi</string>
     <string name="dirac_summary">Optymalizuj jakość dźwięku</string>
     <string name="dirac_headset_title">Typ słuchawek</string>
     <string name="dirac_preset_title">Wybierz konfigurację</string>
+
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Domyślny</string>
     <string name="dirac_headset_earbuds">Douszne Mi</string>
@@ -44,16 +56,45 @@
     <string name="dirac_headset_in_ear2">Mi dokanałowe 2</string>
     <string name="dirac_headset_earphone_basic">Słuchawki douszne Mi Basic</string>
     <string name="dirac_headset_earphone">Słuchawki douszne Mi</string>
+
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">Domyślny</string>
     <string name="dirac_preset_rock">Rock</string>
     <string name="dirac_preset_jazz">Jazz</string>
     <string name="dirac_preset_pop">Pop</string>
-    <string name="dirac_preset_classical">Muzyka poważna</string>
+    <string name="dirac_preset_classical">Muzyka Klasyczna</string>
     <string name="dirac_preset_hiphop">Hip Hop</string>
     <string name="dirac_preset_blues">Blues</string>
     <string name="dirac_preset_electronic">Elektroniczna</string>
     <string name="dirac_preset_country">Country</string>
-    <string name="dirac_preset_dance">Taniec</string>
+    <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Profile termiczne i tryb gry</string>
+    <string name="thermal_summary">Dostosuj profile termiczne i profile ekranu dotykowego dla poszczególnych aplikacji, aby uzyskać optymalną wydajność i wrażenia w grach</string>
+    <string name="thermal_default">Default</string>
+    <string name="thermal_benchmark">Benchmark / 120 Hz</string>
+    <string name="thermal_camera">Camera</string>
+    <string name="thermal_dialer">Dialer / 60 Hz</string>
+    <string name="thermal_gaming">Gaming / 90 Hz</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Wyczyść głośnik</string>
+    <string name="clear_speaker_summary">Odtwórz 30-sekundowy dźwięk, aby wyczyścić głośnik</string>
+    <string name="clear_speaker_description">Uruchom tę funkcję raz lub dwa razy, gdy zauważysz, że głośnik jest zablokowany przez kurz. Ustaw głośność multimediów na maksimum. Jeśli to nie pomogło, to uruchom tę funkcję 2-5 razy, potrząsając urządzeniem z głośnikiem skierowanym w dół.</string>
+
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Touch Control</string>
+    <string name="touch_game_mode_title">Enable game mode</string>
+    <string name="touch_game_mode_summary">Activate manual touchscreen feature controls for a better gaming experience</string>
+    <string name="touch_response_title">Touch response</string>
+    <string name="touch_response_summary">Control touch response</string>
+    <string name="touch_sensitivity_title">Touch sensitivity</string>
+    <string name="touch_sensitivity_summary">Control touch sensitivity for repeated taps</string>
+    <string name="touch_resistant_title">Touch-resistant area</string>
+    <string name="touch_resistant_summary">Reduce touch sensitivity near the edges to avoid triggering touch controls</string>
+
+     <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Mi Sound Enhancer</string>
 </resources>
