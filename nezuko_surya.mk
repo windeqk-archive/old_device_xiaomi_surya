@@ -33,7 +33,7 @@ PRODUCT_MODEL := POCO X3
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Fingerprint
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys"
 
 # Nezuko OS Properties
 CUSTOM_BUILD_TYPE := UNOFFICIAL

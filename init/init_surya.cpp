@@ -134,8 +134,8 @@ void set_device_props(const std::string fingerprint, const std::string descripti
 
 void vendor_load_properties() {
     std::string hwname = GetProperty("ro.boot.hwname", "");
-    char const fp[] = "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys";
-    char const fp_desc[] = "redfin-user 11 RQ2A.210405.005 7181113 release-keys";
+    char const fp[] = "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys";
+    char const fp_desc[] = "redfin-user 11 RQ2A.210505.003 7255357 release-keys";
     char nfc_prop[] = "ro.hw.nfc";
 
     if (hwname == "surya") {
