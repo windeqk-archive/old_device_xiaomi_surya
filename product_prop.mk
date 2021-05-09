@@ -25,7 +25,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.hwui.renderer=skiavk \
+    debug.hwui.renderer=skiagl \
     debug.sf.disable_backpressure=1 \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.latch_unsignaled=1 \
