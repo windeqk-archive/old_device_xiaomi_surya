@@ -41,9 +41,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.camera.device@1.0
-
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
