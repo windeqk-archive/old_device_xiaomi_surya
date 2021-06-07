@@ -9,3 +9,6 @@ allow system_app sysfs_graphics:file r_file_perms;
 allow system_app vendor_wfd_service_prop:property_service {set};
 
 get_prop(system_app, vendor_camera_prop);
+
+allow system_app sysfs_zram:dir { search };
+allow system_app sysfs_zram:file { read };

@@ -8,3 +8,5 @@ allow priv_app apexd_prop:file { getattr open map };
 
 binder_call(priv_app, hal_displayfeature_xiaomi_default)
 binder_call(priv_app, hal_misys_default)
+allow priv_app bluetooth_a2dp_offload_prop:file { getattr  map  open };
+allow priv_app bluetooth_audio_hal_prop:file { getattr  map  open };

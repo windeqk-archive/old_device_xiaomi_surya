@@ -16,4 +16,11 @@ allow init firmware_file:filesystem getattr;
 allow init null_device:chr_file mounton;
 allow init sysfs:file setattr;
 allow init system_file:file mounton;
+allow init system_file:file { execute_no_trans };
 allow init sysfs_battery_supply:file { setattr };
+
+allow init netutils_wrapper_exec:file { execute  execute_no_trans  getattr  map  read };
+allow init netutils_wrapper_exec:file { open };
+allow init hal_dpmQmiMgr:binder { call };
+allow init init:netlink_route_socket { read };
+
