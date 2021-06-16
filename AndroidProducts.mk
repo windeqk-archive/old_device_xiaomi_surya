@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nezuko_surya.mk
+    $(LOCAL_DIR)/ssos_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    nezuko_surya-user \
-    nezuko_surya-userdebug \
-    nezuko_surya-eng
+    ssos_surya-user \
+    ssos_surya-userdebug \
+    ssos_surya-eng
