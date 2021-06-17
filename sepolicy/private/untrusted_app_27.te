@@ -9,6 +9,3 @@ allow untrusted_app_27 theme_prop:file { read };
 allow untrusted_app_27 theme_prop:file { getattr  map  open };
 allow untrusted_app_27 adbd_prop:file { getattr  map  open };
 allow untrusted_app_27 apexd_prop:file { getattr  map  open };
-allow untrusted_app_27 bluetooth_a2dp_offload_prop:file { getattr  map  open };
-allow untrusted_app_27 bluetooth_audio_hal_prop:file { map  open };
-allow untrusted_app_27 bluetooth_prop:file { getattr  map };

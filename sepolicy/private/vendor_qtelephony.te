@@ -1,2 +1,0 @@
-type hal_atfwd_hwservice, domain;
-allow vendor_qtelephony hal_atfwd_hwservice:hwservice_manager { find };
