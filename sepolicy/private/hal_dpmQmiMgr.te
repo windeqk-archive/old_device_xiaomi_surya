@@ -1,2 +1,0 @@
-type hal_dpmQmiMgr, domain;
-allow hal_dpmQmiMgr init:binder { call };
