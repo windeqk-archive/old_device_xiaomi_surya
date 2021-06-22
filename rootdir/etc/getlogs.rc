@@ -1,0 +1,12 @@
+on fs
+    mkdir /cache/logs 0775 system system
+    rm /cache/logs/log
+    start persistentLogging
+
+on property:sys.boot_completed=1
+    stop persistentLogging
+
+service persistentLogging /system/bin/logcat -f /cache/logs/log
+    user system
+    group root system log
+    disabled
