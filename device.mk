@@ -136,7 +136,8 @@ PRODUCT_COPY_FILES += \
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    kernel/xiaomi/surya
+    kernel/xiaomi/surya \
+    hardware/qcom-caf/common/fwk-detect
 
 # Telephony
 PRODUCT_PACKAGES += \
