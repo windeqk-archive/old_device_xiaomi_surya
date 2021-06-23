@@ -179,7 +179,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# Logs
-PRODUCT_PACKAGES += \
-    getlogs
